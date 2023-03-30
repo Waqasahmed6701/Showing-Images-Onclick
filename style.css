@@ -1,0 +1,44 @@
+* {
+    box-sizing: border-box;
+    padding: 0%;
+    margin: 0%;
+}
+
+body {
+    text-decoration: none;
+    font-family: sans-serif;
+}
+
+.main_img {
+    transform: translate(-50% -50%);
+    position: absolute;
+    top: 10%;
+    left: 20%;
+}
+
+.slider_imgs img {
+    height: 92px;
+    margin: 10px 0;
+    cursor: pointer;
+    display: block;
+    opacity: 0.6;
+}
+
+.slider_imgs img:hover {
+    opacity: 1;
+}
+
+.slider_imgs {
+    float: left;
+}
+
+.img_container {
+    float: right;
+}
+
+.img_container img {
+    height: 500px;
+    position: absolute;
+    top: 2%;
+    left: 120%;
+}

@@ -1,0 +1,41 @@
+<html>
+
+<head>
+    <meta name="vierport" content="width=deveive-width, initial-scale=1.0">
+    <title>Showing Images Onclick</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- HTML Code -->
+    <div class="main_img">
+        <div class="slider_imgs">
+
+            <img src="Images/img1.jpg" alt="Image" onclick="myFunction(this)">
+            <img src="Images/img2.jpg" alt="Image" onclick="myFunction(this)">
+            <img src="Images/img3.jpg" alt="Image" onclick="myFunction(this)">
+            <img src="Images/img4.jpg" alt="Image" onclick="myFunction(this)">
+            <img src="Images/img5.jpg" alt="Image" onclick="myFunction(this)">
+
+        </div>
+
+        <div class="img_container">
+            <img id="imgBox" src="Images/img1.jpg" alt="Image">
+        </div>
+
+    </div>
+
+    <!-- JavaScript Code -->
+    <script>
+
+        function myFunction(smallImg) {
+            var fullImg = document.getElementById("imgBox");
+            fullImg.src = smallImg.src;
+        };
+
+    </script>
+
+</body>
+
+</html>
